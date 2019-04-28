@@ -1,8 +1,6 @@
 import ReactDOM from 'react-dom';
 import Root from './root';
 
-// import helperSwipe from './core/helpers/helper-swipe';
-
 import './core/assets/favicon.ico';
 import './core/assets/images/icon-57-2x.png';
 import './core/assets/images/icon-57.png';
@@ -25,8 +23,6 @@ import './core/assets/images/apple_splash_750.png';
 import './core/assets/styles/main.scss';
 
 // const DEVELOMPENT = (process.env.NODE_ENV === 'development');
-// console.log(DEVELOMPENT);
-
 // if (('serviceWorker' in navigator) && !(window.cordova) && !DEVELOMPENT) {
 //   navigator.serviceWorker.register('service-worker.js');
 // }
@@ -38,14 +34,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 if ('navigator' in window && window.navigator.standalone) {
   document.body.classList.add('isStandalone');
 }
-
-// Add swipe capabillities
-// helperSwipe(document);
-
-// if (module.hot) {
-//   console.clear();
-//   module.hot.accept();
-// }
 
 function runApp() {
   ReactDOM.render(
