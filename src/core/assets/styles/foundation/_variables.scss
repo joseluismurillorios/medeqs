@@ -1,0 +1,56 @@
+// Primary
+$color_one: #E91E63;
+$color_two: #D81B60;
+$color_three: #C2185B;
+$color_four: #AD1457;
+$color_five: #880E4F;
+
+$primary: $color_one;
+$secondary: $color_four;
+
+// Unused
+$primary-80: rgba(233,30,99, 0.8);
+$primary-70: rgba(233,30,99, 0.7);
+$primary-50: rgba(233,30,99, 0.5);
+$primary-40: rgba(233,30,99, 0.4);
+$primary-15: rgba(233,30,99, 0.15);
+
+//
+$darker: rgba(27, 27, 27, 1);
+$dark: rgba(33, 33, 33, 1);
+$dark-80: rgba(33, 33, 33, 0.8);
+$dark-20: rgba(33, 33, 33, 0.2);
+$light: rgba(255, 255, 255, 1);
+$light-80: rgba(255, 255, 255, 0.80);
+$light-50: rgba(255, 255, 255, 0.5);
+$light-20: rgba(255, 255, 255, 0.2);
+$light-05: rgba(255, 255, 255, 0.05);
+
+$danger: #dc3545;
+$success: #28a745;
+
+$f-xs: .5rem;
+$f-sm: .85rem;
+$f-bs: 1rem;
+$f-md: 1.6rem;
+$f-lg: 2.5rem;
+
+$s-xs: .75rem;
+$s-sm: 1rem;
+$s-bs: 2rem;
+$s-md: 3rem;
+$s-lg: 5rem;
+
+// Urls
+
+$grabbing: url('../images/ui/grabbing.png');
+$shop_icons: url('../images/ui/shop_icons.png');
+$portfolio_icon: url('../images/ui/portfolio_icon.png');
+$full_bg: url('../images/ui/full_bg.jpg');
+
+$chevron-down: "\e948";
+$chevron-left: "\e949";
+$chevron-right: "\e94a";
+$chevron-up: "\e94b";
+$arrow-downward: "\e944";
+$checkmark: "\e90d";

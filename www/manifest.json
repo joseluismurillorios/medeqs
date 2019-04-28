@@ -1,0 +1,16 @@
+{
+  "short_name": "Medeqs Web",
+  "name": "Medeqs Web",
+  "icons": [
+    {
+      "src": "android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/#",
+  "background_color": "#E91E63",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#E91E63"
+}
