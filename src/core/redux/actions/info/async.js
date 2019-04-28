@@ -22,7 +22,7 @@ export const storeClinic = (uid, info) => (
         .then(response => response.json())
         .then((data) => {
           if (data.auth !== 'error') {
-            toast.info('Gracias por su opinión', { autoClose: 8000 });
+            toast.info('Datps agregados, gracias por participar', { autoClose: 8000 });
             dispatch(clearClinic());
             dispatch(setLoader(false));
             return true;

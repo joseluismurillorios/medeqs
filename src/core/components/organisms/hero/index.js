@@ -80,7 +80,7 @@ class Hero extends Component {
           <div className="hero-holder">
             <div className="hero-message text-rotator">
               <h1>
-                Medeqs
+                Bienvenido
               </h1>
               <h2 className="hero-subtitle">
                 <Rotator
