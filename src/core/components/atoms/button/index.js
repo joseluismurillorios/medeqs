@@ -67,7 +67,6 @@ class Button extends Component {
         type="button"
         className={`${clss} ${className}`}
         onClick={(e) => {
-          console.log('onClick');
           this.clicked = true;
           this.handleClick(e);
           onTap({ value, name });

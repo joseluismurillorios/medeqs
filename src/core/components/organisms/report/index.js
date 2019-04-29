@@ -104,12 +104,14 @@ const Report = ({
           subcategories
           && (
             <div className="col-sm-12 col-md-8 col-md-offset-2 mb-10">
-              <div className="title uppercase">¿Que necesidades tiene la clínica?</div>
-              <sup
-                className={errors.subcategory ? 'error-text' : ''}
-              >
-                {errors.subcategory ? 'Necesitas seleccionar una subcategoría' : 'Seleccione 1 o más'}
-              </sup>
+              <div className="list-item" style={{ animationDelay: '0.1s' }}>
+                <div className="title uppercase">¿Que necesidades tiene la clínica?</div>
+                <sup
+                  className={errors.subcategory ? 'error-text' : ''}
+                >
+                  {errors.subcategory ? 'Necesitas seleccionar una subcategoría' : 'Seleccione 1 o más'}
+                </sup>
+              </div>
               <div className="list-item" style={{ animationDelay: '0.1s' }}>
                 {
                   subcategories.map(sub => (
