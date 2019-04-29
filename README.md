@@ -32,7 +32,7 @@ npm run dev
 - A detailed user manual
 - Direct private messaging
 - Add english language
-- Integrate cordova for mobile dployment
+- Integrate cordova for mobile deloyment
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
