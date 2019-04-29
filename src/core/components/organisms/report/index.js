@@ -133,7 +133,7 @@ const Report = ({
           )
         }
         {
-          (clinic.name.length > 3 && clinic.name.length < 25 && hasSub)
+          (clinic.name.length > 3 && clinic.name.length < 50 && hasSub)
           && (
             <div className="col-sm-12 col-md-6 col-md-offset-3 mb-10">
               <div className="list-item" style={{ animationDelay: '0.1s' }}>

@@ -5,7 +5,7 @@
   "description": "A medical web app.",
   "main": "index.js",
   "author": "Jose Murillo",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": "8.11.2"
   },

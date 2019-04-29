@@ -22,10 +22,10 @@ import './core/assets/images/apple_splash_750.png';
 
 import './core/assets/styles/main.scss';
 
-// const DEVELOMPENT = (process.env.NODE_ENV === 'development');
-// if (('serviceWorker' in navigator) && !(window.cordova) && !DEVELOMPENT) {
-//   navigator.serviceWorker.register('service-worker.js');
-// }
+const DEVELOMPENT = (process.env.NODE_ENV === 'development');
+if (('serviceWorker' in navigator) && !(window.cordova) && !DEVELOMPENT) {
+  navigator.serviceWorker.register('service-worker.js');
+}
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   document.body.classList.add('isMobile');

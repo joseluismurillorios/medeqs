@@ -53,7 +53,7 @@ class Google extends Component {
     let opened = true;
     Object.entries(info.clinic).forEach(([key, val]) => {
       if (key === 'name') {
-        const short = info.clinic.name.length < 3;
+        const short = info.clinic.name.length < 3 || info.clinic.name.length > 50;
         if (short) {
           error = true;
           errors[key] = true;
