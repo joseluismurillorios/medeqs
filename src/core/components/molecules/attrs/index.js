@@ -67,7 +67,7 @@ class Attrs extends Component {
                   )
                 }
                 <tr>
-                  <th className="esri-feature__field-header">Contact</th>
+                  <th className="esri-feature__field-header">Contacto</th>
                   <td className="esri-feature__field-data">
                     <a href={`mailto:${contact}`}>{contact}</a>
                   </td>
