@@ -1,7 +1,6 @@
 # Medreqs
 
-A healthcare web application.
-Site: https://medeqs.herokuapp.com/
+A healthcare web application. [Visit site](https://medeqs.herokuapp.com)
 
 ## Prerequisites
 
