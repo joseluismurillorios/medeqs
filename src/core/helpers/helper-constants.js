@@ -46,12 +46,12 @@ export const TYPES = {
   5: 'reflejo',
   6: 'muletas',
   7: 'estetoscopio',
-  8: 'jeringa',
+  8: 'jeringuilla',
   9: 'medicación',
   10: 'camilla',
   11: 'oxígeno',
   12: 'cardiograma',
-  13: 'syringe 1',
+  13: 'jeringa',
   14: 'tijeras',
   15: 'mortero',
   16: 'suero',
@@ -132,9 +132,9 @@ export const EQUIPMENT = {
       },
       8: {
         en: 'syringe',
-        es: 'jeringa',
+        es: 'jeringuilla',
         items: {
-          1008: 'jeringa',
+          1008: 'jeringuilla',
         },
       },
       9: {
@@ -166,10 +166,10 @@ export const EQUIPMENT = {
         },
       },
       13: {
-        en: 'syringe 1',
+        en: 'jeringa',
         es: 'syringe 1',
         items: {
-          1013: 'syringe 1',
+          1013: 'jeringa',
         },
       },
       14: {

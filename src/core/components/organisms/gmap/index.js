@@ -19,7 +19,6 @@ import {
   isMobile,
 } from '../../../helpers/helper-util';
 
-// import Button from '../../atoms/button';
 import Attrs from '../../molecules/attrs';
 
 import ControlsLeft from '../controls/left';
@@ -66,6 +65,9 @@ class GMap extends Component {
 
     this.isIOS = isIOS;
     this.pom = document.createElement('a');
+
+    this.toastId = null;
+    this.instructions = 'Seleccione una punto para ver sus necesidades o toque el mapa para agregar una clínica.';
   }
 
   componentDidMount() {
@@ -206,6 +208,10 @@ class GMap extends Component {
 
     window.google.maps.event.addListenerOnce(this.gmap, 'idle', () => {
       // do something only the first time the map is loaded
+      this.toastId = toast.info(this.instructions, {
+        position: toast.POSITION.TOP_LEFT,
+        autoClose: false,
+      });
       this.loading(false);
       const center = this.gmap.getCenter();
       const zoom = this.gmap.getZoom();
@@ -280,6 +286,12 @@ class GMap extends Component {
   toggleShowHelp() {
     const { showHelp } = this.state;
     this.setState({ showHelp: !showHelp });
+    if (!toast.isActive(this.toastId)) {
+      this.toastId = toast.info(this.instructions, {
+        position: toast.POSITION.TOP_LEFT,
+        autoClose: false,
+      });
+    }
   }
 
   hideShowHelp() {
@@ -345,6 +357,9 @@ class GMap extends Component {
   }
 
   goTo({ value }, zoom = 12) {
+    if (this.toastId) {
+      toast.dismiss(this.toastId);
+    }
     if (!value) {
       return;
     }

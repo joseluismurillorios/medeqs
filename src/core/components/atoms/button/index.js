@@ -16,11 +16,6 @@ class Button extends Component {
   }
 
   handleClick(e) {
-    // const {
-    //   onTap,
-    //   value,
-    //   name,
-    // } = this.props;
     // Get Cursor Position
     const cursorPos = {
       top: e.clientY,
@@ -71,12 +66,14 @@ class Button extends Component {
       <button
         type="button"
         className={`${clss} ${className}`}
-        onClick={() => {
-          // console.log('onClick');
+        onClick={(e) => {
+          console.log('onClick');
+          this.clicked = true;
+          this.handleClick(e);
           onTap({ value, name });
         }}
-        onMouseUp={this.mouseUp}
-        onTouchEnd={this.touchEnd}
+        // onMouseUp={this.mouseUp}
+        // onTouchEnd={this.touchEnd}
         ref={(el) => { this.button = el; }}
         tabIndex={tabIndex}
         disabled={disabled}

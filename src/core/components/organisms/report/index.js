@@ -49,9 +49,16 @@ const Report = ({
   return (
     <div className={`fs-menu bg-lighter ${opened ? 'open' : ''}`} id="overlay">
       <Scrollable id="ScrollReport" className="overlay-menu row">
-        <div className="col-sm-12 col-md-6 col-md-offset-3 mt-30 mb-10">
+        <div className="col-sm-12 col-md-6 col-md-offset-3 mt-20 mb-10">
+          <button
+            type="button"
+            onClick={onToggle}
+            className="btn-close"
+          >
+            <span className="implanf-close" />
+          </button>
           <div className="list-item" style={{ animationDelay: '0.1s' }}>
-            <div className="title uppercase">Detalles</div>
+            <h5 className="uppercase">Detalles</h5>
             <sup className={errors.message ? 'error-text' : ''}>
               Tu información es muy importante para nosotros
             </sup>
@@ -97,7 +104,7 @@ const Report = ({
           subcategories
           && (
             <div className="col-sm-12 col-md-8 col-md-offset-2 mb-10">
-              <div className="title uppercase">¿Que necesita?</div>
+              <div className="title uppercase">¿Que necesidades tiene la clínica?</div>
               <sup
                 className={errors.subcategory ? 'error-text' : ''}
               >
@@ -130,9 +137,9 @@ const Report = ({
           && (
             <div className="col-sm-12 col-md-6 col-md-offset-3 mb-10">
               <div className="list-item" style={{ animationDelay: '0.1s' }}>
-                <div className="title uppercase">Detalles</div>
+                <div className="title uppercase">Información</div>
                 <sup className={errors.message ? 'error-text' : ''}>
-                  Tu información es muy importante para nosotros
+                  Tus datos son muy importante para nosotros
                 </sup>
                 <Textarea
                   id="message"

@@ -294,7 +294,7 @@ button.toast-close {
 }
 
 .Toastify__toast--info {
-  background: #7C4DFF;
+  background: #2979FF;
   color: #fff;
 }
 
@@ -663,4 +663,29 @@ button.toast-close {
 
 .buttons-holder .btn-lg.btn-white {
   box-shadow: 0 4px 20px rgba(0,0,0,.1);
+}
+
+.btn-close {
+  position: absolute;
+  right: 8px;
+  top: -6px;
+  font-size: 24px;
+  background: transparent;
+  color: #212121;
+  z-index: 99;
+  border: 1px solid #e0e0e0;
+  width: 34px;
+  height: 34px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 34px;
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .nav-wrap {
+    border-top: 1px solid #e0e0e0;
+  }
 }
